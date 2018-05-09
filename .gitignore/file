@@ -1,0 +1,46 @@
+<?php
+date_default_timezone_set("US/Central");
+	$date =  date('Y- m- d',time ());
+	echo "The value of \$date: ".$date."<br>";
+	$tar = "2017/05/24";
+	echo "The value of \$tar: ".$tar."<br>";
+	$year = array("2012", "396", "300","2000", "1100", "1089");
+	echo "The value of \$year: ";
+	print_r($year);
+date_default_timezone_set("US/Central");
+			$date1 =  date('/Y/m/d', time());
+	echo "2)The value of new \$date: ".$date1."<br>";
+
+if ($date1=$tar>0){echo "3) \$date compare to \$tar :The Future","<br>";
+}
+elseif($date1=$tar<0){echo"the past","<br>";}
+else{
+	echo"Oops" ,"<br>";
+}
+
+$a =date($date);
+$is_found =array_count_values($a);
+echo "4) Positon of / in \$date",strrpos($date,"/"),"<br>";
+echo" 5)number of words in \$date :" count("$date"),"<br>";
+
+echo  "6)the length of the string is :", strlen ($date),"<br>";
+echo "7)ASCII value of first char in \$date string :",ord($date) . "<br>";
+echo "8) Last two Chars in \$date:",substr("$date",-2),"<br>";
+$date =  array("2018", "02","21");
+//9secho .$date[0].,.$date[1].,.$date[2]."<br>";
+foreach($year as $value)
+
+ 
+if
+	((($value% 4) == 0) && ((($value % 100) != 0) || (($value % 400) == 0)))
+
+{echo "10)$value : True |"," \n";}
+
+else {
+	echo"$value :False |","\n";
+	
+}
+
+  
+	
+?>
